@@ -8,7 +8,9 @@
 
 # Running the App Container
 
-1. Build the application Docker image:
+1. Update the `DATABASES` configuration in `todolist/settings.py` with the IP address of the running MySQL container.
+
+2. Build the application Docker image:
    docker build -t nnnikol/todoapp:2.0.0 .
 
 3. Run the application container:
